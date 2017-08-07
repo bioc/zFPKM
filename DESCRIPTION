@@ -1,0 +1,23 @@
+Package: zFPKM
+Title: A suite of functions to facilitate zFPKM transformations
+Version: 0.99.18
+Authors@R: c( person("Ron", "Ammar", role = c("aut", "cre"), email =
+        "ron.ammar@bms.com"), person("John", "Thompson", role = "aut",
+        email = "john.thompson@bms.com") )
+Description: Perform the zFPKM transform on RNA-seq FPKM data. This
+        algorithm is based on the publication by Hart et al., 2013
+        (Pubmed ID 24215113). Reference recommends using zFPKM > -3 to
+        select expressed genes. Validated with encode open/closed
+        chromosome data. Works well for gene level data using FPKM or
+        TPM. Does not appear to calibrate well for transcript level
+        data.
+License: GPL-3 | file LICENSE
+URL: https://github.com/ronammar/zFPKM/
+BugReports: https://github.com/ronammar/zFPKM/issues
+Imports: checkmate, dplyr, ggplot2, tidyr, SummarizedExperiment
+Suggests: knitr, limma, edgeR, GEOquery, stringr, printr
+VignetteBuilder: knitr
+biocViews: RNASeq, FeatureExtraction, Software, GeneExpression
+Depends: R (>= 3.4.0)
+LazyData: true
+RoxygenNote: 6.0.1
